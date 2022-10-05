@@ -1,58 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>dd</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='stylesheet' href='./style.css'>
+<meta charset="UTF-8">
+<!-- 저는 인트로에서는 메뉴를 사용하지 않을껍니다.
+  <div class="header">
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
 
-  <script src="./js/script.js"></script>
-  <link rel="stylesheet" href="./css/style.css">
+</div>-->
 
-  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-</head>
-<body>
-  
-<nav>
-  <div class="container">
-    <div class="grid">
-      <div class="column-xs-12 column-sm-8">
-            <p id="logo"  style="font-size:18px;" > 
-              <img id="profile_avatar" class="profile" src="${File_ADD}" style="vertical-align:middle;border: 0px solid black;border-radius: 100%;width: 50px; height: 50px;">
-              &nbsp;&nbsp;<span id="nickname" ><!-- NICK NAME--></span>
-            </p>
-            
-      </div>
-      
-      <div class="column-xs-12 column-sm-4">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+<!-- 쇼케이스라는 클래스를 분석해보세요 
+     특히, @media라는 미디어 쿼리를 배우게 될꺼에요!
+     우리가 화면 해상도에 따라서 UI의 형태를 바꿀 때 미디어 쿼리를 사용합니다.
+-->
+<section class="showcase">
+
+  <header>
+    <h2 class="logo">돌고래보호단</h2>
+    <div class="toggle"></div>
+  </header>
+  <div class="overlay"></div>
+  <video src="./rain.mp4" muted loop autoplay></video>
+  <!-- CSS의 text 부분만 먼저 적용해보고, 이 후 @미디어쿼리를 확인해보세요. -->
+  <div class="text">
+    <h2>Never Stop To </h2>
+    <h3>Making something new</h3>
+    <p>Don’t be into trends. Don’t make rule own you, but you decide what you are, what you want to express by the way
+      you create and the way to live.</p>
+      <!-- 우리는 새로운 페이지로 이동할 때 <a href>를 사용합니다 -->
+    <a href="./comp.html">Explore</a>
   </div>
-</nav>
 
-<main>
-  <div class="container">
-    <section id="about" class="grid"  >
-      <div class="column-xs-12 column-sm-12 column-md-10" style="margin-top: 2rem;">
-        <h1 id="intro_main"><!-- Intro main --></h1>
-       <p id="intro_sub" class="lead"><!-- Intro sub --></p>
-     <span class="bottom-inline">More</span></p>   </span></div>
-    </section>
+</section>
 
-    
-    <section id="blog" class="grid">
-     <!-- BLOG -->
-    </div>
-    
-    </section>
-  </div>
-</main>
-
-
-</body>
-</html>
